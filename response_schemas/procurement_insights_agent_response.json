@@ -1,0 +1,40 @@
+{
+  "agent_name": "Procurement Insights Agent",
+  "agent_id": "6999834f5fcf634111651131",
+  "description": "Answers natural-language questions about PR/PO statuses, TAT metrics, SLA compliance, approval chain progress, and bottleneck identification using data fetched from SAP",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "summary": "string",
+      "details": "string",
+      "metrics": [
+        {
+          "label": "string",
+          "value": "string"
+        }
+      ],
+      "recommendations": [
+        "string"
+      ],
+      "status": "string"
+    }
+  },
+  "example_response": {
+    "result": {
+      "summary": "Brief summary of the insight",
+      "details": "Detailed analysis or explanation",
+      "metrics": [
+        {
+          "label": "Metric name",
+          "value": "Metric value"
+        }
+      ],
+      "recommendations": [
+        "sample string"
+      ],
+      "status": "Overall status assessment (e.g., On Track, At Risk, Critical)"
+    }
+  }
+}

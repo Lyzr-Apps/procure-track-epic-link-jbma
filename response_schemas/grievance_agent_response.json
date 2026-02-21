@@ -1,0 +1,34 @@
+{
+  "agent_name": "Grievance Agent",
+  "agent_id": "699983502a0c0e9d620904e1",
+  "description": "Helps users raise procurement grievances (approval delays, policy/compliance concerns), categorizes them, tracks resolution status, and notifies relevant stakeholders",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "action": "string",
+      "grievance_id": "string",
+      "type": "string",
+      "status": "string",
+      "details": "string",
+      "next_steps": [
+        "string"
+      ],
+      "resolution_timeline": "string"
+    }
+  },
+  "example_response": {
+    "result": {
+      "action": "What action was taken",
+      "grievance_id": "Grievance reference ID",
+      "type": "Grievance category",
+      "status": "Current status",
+      "details": "Detailed response or status explanation",
+      "next_steps": [
+        "sample string"
+      ],
+      "resolution_timeline": "Expected resolution timeframe"
+    }
+  }
+}

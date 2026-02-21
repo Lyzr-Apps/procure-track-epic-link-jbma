@@ -1,0 +1,51 @@
+{
+  "agents": {
+    "procurement_insights_agent": {
+      "agent_id": "6999834f5fcf634111651131",
+      "name": "Procurement Insights Agent",
+      "description": "Answers natural-language questions about PR/PO statuses, TAT metrics, SLA compliance, approval chain progress, and bottleneck identification using data fetched from SAP",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "temperature": 0.3,
+      "top_p": 1,
+      "agent_type": "json",
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      }
+    },
+    "compliance_trail_agent": {
+      "agent_id": "699983502a0c0e9d620904df",
+      "name": "Compliance Trail Agent",
+      "description": "Retrieves and explains DOA approval records, SOP compliance history, and generates audit-ready summaries by querying SAP approval logs and document trails",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "temperature": 0.3,
+      "top_p": 1,
+      "agent_type": "json",
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      }
+    },
+    "grievance_agent": {
+      "agent_id": "699983502a0c0e9d620904e1",
+      "name": "Grievance Agent",
+      "description": "Helps users raise procurement grievances (approval delays, policy/compliance concerns), categorizes them, tracks resolution status, and notifies relevant stakeholders",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "temperature": 0.4,
+      "top_p": 1,
+      "agent_type": "json",
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      }
+    }
+  },
+  "rag_ids": {},
+  "schedule_ids": {}
+}

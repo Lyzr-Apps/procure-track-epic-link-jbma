@@ -1,0 +1,52 @@
+{
+  "agent_name": "Compliance Trail Agent",
+  "agent_id": "699983502a0c0e9d620904df",
+  "description": "Retrieves and explains DOA approval records, SOP compliance history, and generates audit-ready summaries by querying SAP approval logs and document trails",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "summary": "string",
+      "audit_trail": [
+        {
+          "step": "string",
+          "approver": "string",
+          "timestamp": "string",
+          "doa_level": "string",
+          "status": "string",
+          "sop_reference": "string"
+        }
+      ],
+      "compliance_status": "string",
+      "exceptions": [
+        "string"
+      ],
+      "sop_references": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "result": {
+      "summary": "Brief compliance summary",
+      "audit_trail": [
+        {
+          "step": "Step number or name",
+          "approver": "Approver name",
+          "timestamp": "Timestamp of action",
+          "doa_level": "DOA level",
+          "status": "Approval status",
+          "sop_reference": "SOP reference"
+        }
+      ],
+      "compliance_status": "Overall compliance assessment",
+      "exceptions": [
+        "sample string"
+      ],
+      "sop_references": [
+        "sample string"
+      ]
+    }
+  }
+}

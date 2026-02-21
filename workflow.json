@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Query",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "procurement_insights_agent",
+      "type": "Agent",
+      "label": "Procurement Insights Agent",
+      "nodeCategory": "agent",
+      "agent_id": "6999834f5fcf634111651131"
+    },
+    {
+      "id": "compliance_trail_agent",
+      "type": "Agent",
+      "label": "Compliance Trail Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699983502a0c0e9d620904df"
+    },
+    {
+      "id": "grievance_agent",
+      "type": "Agent",
+      "label": "Grievance Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699983502a0c0e9d620904e1"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Agent Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    { "source": "input_node", "target": "procurement_insights_agent" },
+    { "source": "input_node", "target": "compliance_trail_agent" },
+    { "source": "input_node", "target": "grievance_agent" },
+    { "source": "procurement_insights_agent", "target": "output_node" },
+    { "source": "compliance_trail_agent", "target": "output_node" },
+    { "source": "grievance_agent", "target": "output_node" }
+  ]
+}
