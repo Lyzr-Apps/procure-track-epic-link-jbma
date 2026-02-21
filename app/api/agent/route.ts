@@ -115,6 +115,17 @@ function normalizeResponse(parsed: any): NormalizedAgentResponse {
 }
 
 /**
+ * GET /api/agent — health check / prevents HTML fallback on GET requests
+ */
+export async function GET() {
+  return NextResponse.json({
+    success: true,
+    status: 'ok',
+    message: 'Agent API is available. Use POST to interact.',
+  })
+}
+
+/**
  * POST /api/agent
  *
  * Two modes, both POST:
